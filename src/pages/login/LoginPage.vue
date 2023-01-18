@@ -15,10 +15,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { storeToRefs } from 'pinia';
-import { useOptionStore } from '@/store/optionStore';
-import { useSetupStore } from '@/store/setupStore';
+import { useOptionStore } from '@/stores/optionStore';
+import { useSetupStore } from '@/stores/setupStore';
 const optionStore = useOptionStore();
 const { count, doubleCount } = storeToRefs(optionStore);
 const { increment } = optionStore;

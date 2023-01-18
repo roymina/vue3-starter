@@ -23,10 +23,10 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
-router.beforeEach((to, from, next) => {
-  //检查token
-  const token = localStorage.getItem('token');
-  if (to.name !== 'Login' && !token) next({ name: 'Login' });
-  else next();
-});
+// router.beforeEach((to, from, next) => {
+//   //检查token
+//   const token = localStorage.getItem('token');
+//   if (to.name !== 'Login' && !token) next({ name: 'Login' });
+//   else next();
+// });
 export default router;
