@@ -4,11 +4,10 @@
     <div class="flex flex-col h-full flex-1">
       <div class="h-14 bg-gray-200">header</div>
       <div class="flex-1 p-4">
-        <router-view/>
+        <router-view />
       </div>
     </div>
   </div>
 </template>
 
-<script setup> 
-</script>
+<script setup></script>
