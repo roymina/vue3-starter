@@ -6,16 +6,16 @@
 
 <script>
 export default {
-  name: 'SvgIcon'
-}
+  name: "SvgIcon"
+};
 </script>
 
 <script setup>
-import { computed } from 'vue'
+import { computed } from "vue";
 const props = defineProps({
   prefix: {
     type: String,
-    default: 'icon'
+    default: "icon"
   },
   name: {
     type: String,
@@ -23,7 +23,7 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: '#fff'
+    default: "#fff"
   },
   clickable: {
     type: Boolean,
@@ -31,21 +31,21 @@ const props = defineProps({
   },
   size: {
     type: String,
-    default: '1em'
+    default: "1em"
   },
   className: {
     type: String,
-    default: ''
+    default: ""
   }
-})
-const symbolId = computed(() => `#${props.prefix}-${props.name}`)
-const svgClass = computed(() => 'svg-icon ' + props.className || '')
+});
+const symbolId = computed(() => `#${props.prefix}-${props.name}`);
+const svgClass = computed(() => "svg-icon " + props.className || "");
 const styleObject = computed(() => {
   return {
     width: props.size,
     height: props.size,
-    cursor: props.clickable ? 'pointer' : ''
-  }
-})
-const emit = defineEmits(['on-click'])
+    cursor: props.clickable ? "pointer" : ""
+  };
+});
+const emit = defineEmits(["on-click"]);
 </script>

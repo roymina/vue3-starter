@@ -11,11 +11,11 @@
 </template>
 
 <script setup>
-import { useOptionStore } from '@/stores/optionStore'
-import { useSetupStore } from '@/stores/setupStore'
-const optionStore = useOptionStore()
-const { count, doubleCount } = storeToRefs(optionStore)
-const { increment } = optionStore
+import { useOptionStore } from "@/stores/optionStore";
+import { useSetupStore } from "@/stores/setupStore";
+const optionStore = useOptionStore();
+const { count, doubleCount } = storeToRefs(optionStore);
+const { increment } = optionStore;
 
-const setupStore = useSetupStore()
+const setupStore = useSetupStore();
 </script>

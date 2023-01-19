@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       alias: {
-        map: [['@', '/src']]
+        map: [["@", "/src"]]
       }
     }
   },
@@ -11,13 +11,19 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:vue/essential', 'plugin:prettier/recommended'],
+  extends: ["plugin:vue/essential", "plugin:prettier/recommended"],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module"
   },
-  plugins: ['vue', 'prettier'],
+  plugins: ["vue", "prettier"],
   rules: {
-    'prettier/prettier': ['error', { endOfLine: 'off' }]
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto"
+      },
+      { usePrettierrc: true }
+    ]
   }
-}
+};

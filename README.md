@@ -12,7 +12,6 @@ Vue 3 + Vite + WindiCSS + pinia + Vue-router + auto-import + SVG icon
 ## Svg图标使用方法
 将svg文件丢进`/src/assets/svgs`下，然后在vue中使用全局定义的`SvgIcon`组件即可：`<svg-icon name="strawberry" size="256px" color="#cccccc" ：clickable="true" @on-click="onClickHandler"/>`
 
- 
 ## 自动导入
 1. 所有`src/components`下的vue组件将被自动导入，无需手工导入
 2. vue: 如`ref,computed`，vue-router: 如`useRoute,useRouter`，pinia: 如`storeToRefs`等api无需导入，直接使用
